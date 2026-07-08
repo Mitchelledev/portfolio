@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitchelle_portfolio</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaquery.css" />
 </head>
 <body>
     <nav id="Desktop-nav">
         <div class="logo">Udoh Mitchelle</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Experience">Expereince</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About" onclick=toggleMenu()>About</a></li>
+                <li><a href="#Experience" onclick=toggleMenu()>Experience</a></li>
+                <li><a href="#Project" onclick=toggleMenu()>Project</a></li>
+                <li><a href="#Contact" onclick=toggleMenu()>Contact</a></li>
             </ul>
         </div>
+        <div class="ham-burger" onclick="toggleMenu()">☰</div>
     </nav>
     <section id="profile">
         <div class="profile-pic">
@@ -35,9 +35,9 @@
         <h2 class="name">Udoh Mitchelle</h2>
         </div>
         <article>
-            <p class="write-up">I'm an Nigerian frontend developer, with commercial real world experience,
+            <p class="write-up">I'm a Nigerian frontend developer.
                 developing high quality web application, and solving real world frontend problems,
-                with the use of HTML, CSS, Javascript, REACT.
+                with the use of HTML, CSS, Javascript.
             </p>
             <div>
                 <h3 class="stack">MY SKILLS</h3>
@@ -46,7 +46,6 @@
                 <img src="img/html-icon.png" alt="Icon 1" class="icon-html">
                 <img src="img/CSS3_icon-icons.com_67069.png" alt="Icon 2" class="icon-css">
                 <img src="img/javascript_icon_130900.png" alt="icon 3" class="icon-javacript">
-                <img src="img/react_icon_130845.png" alt="icon 4" class=" icon-react">
             </div>
         </article>
     </section>
@@ -112,6 +111,7 @@
     <footer class="end-page">
         <p> &copy; 2026 Mitchelle. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 

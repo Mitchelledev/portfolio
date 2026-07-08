@@ -215,6 +215,7 @@ a:hover{
     color: #000;
     border: 1px solid #ccc;
     border-radius: 20px;
+    
     padding: 8px 20px;
     font-size: 14px;
 }
@@ -231,7 +232,11 @@ button:hover{
     background-color: red;
     padding: 4px;
 }
-
+.ham-burger {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
 
 @media(max-width: 480px){
     nav{
@@ -295,7 +300,36 @@ button:hover{
         box-sizing: border-box;
         border-radius: 16px;
      }
+     .ham-burger{
+        display: none;
+     }
+     .nav-links{
+        display: none;
+     }
+     .nav-links.open {
+        display:flex;
+        flex-decoration:column;  
+     }
     
+}
+@media(max-width: 768px) {
+    .ham-burger {
+        display:block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding:20px;
+        gap: 1rem;
+    }
+    .nav-links.open{
+        display: flex;
+    }
 }
     
 
