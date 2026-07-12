@@ -253,6 +253,45 @@ button:hover{
         border-bottom: 1px solid #eee;
         font-size: 16px; 
     }
+    body.dark-mode {
+        background-color: #1a1a1a;
+        color: white;
+    }
+    body.dark-mode nav {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .nav-links {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .project-card {
+    border-color: #444;
+}
+
+body.dark-mode .btn {
+    color: white;
+    border-color: #666;
+}
+
+body.dark-mode .contact-bar {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark-mode .contact-item {
+    color: white;
+}
+
+.dark-mode-btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
 
 @media(max-width: 480px){
     nav{
@@ -331,8 +370,12 @@ button:hover{
         margin: 0;
         justify-content: center;
      }
+     body.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
 }
-    @media(max-width: 768px) {
+}
+@media(max-width: 768px) {
     .ham-burger {
         display:block;
     }
